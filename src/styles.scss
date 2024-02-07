@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
+// @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;1,900&display=swap');
+html, body ,*{
+  font-family: 'roboto', sans-serif;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}

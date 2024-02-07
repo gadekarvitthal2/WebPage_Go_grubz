@@ -1,0 +1,266 @@
+:root {
+  --primary-color: #fc353a;
+}
+
+.main-container {
+  background: #fc353a;
+  margin: 0px 3%;
+  border-radius: 2rem;
+
+  .nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 100px;
+    padding-top: 25px;
+  }
+
+  .logo-block {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+    }
+  }
+
+  .logo {
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    p {
+      font-weight: 500;
+      font-size: 40px;
+      color: white;
+    }
+  }
+
+  .custom-selection-block {
+    display: flex;
+    column-gap: 16px;
+    justify-content: center;
+    align-items: center;
+    background: #fd8588;
+    color: white;
+    padding: 0px 15px;
+    border-radius: 35px;
+    height: 50px;
+    font-weight: 500;
+
+    p {
+      margin: 0px;
+      padding: 0px;
+      cursor: pointer;
+    }
+  }
+
+  .custom-selection-block p.selected {
+    margin: 0px;
+    padding: 3px 8px;
+    background: white;
+    border-radius: 29px;
+    color: red;
+    font-weight: 500;
+  }
+
+  .login-button-block {
+    display: flex;
+    column-gap: 15px;
+
+    .sign-up-btn,
+    .sign-in-btn {
+      padding: 10px 15px;
+      border: 1px solid white;
+      border-radius: 50px;
+      font-weight: 500;
+      color: white;
+    }
+
+    .sign-up-btn:hover,
+    .sign-in-btn:hover {
+      background-color: white;
+      color: red;
+      font-weight: 500;
+      cursor: pointer;
+      border: none
+    }
+  }
+
+  .nav-block {
+    display: flex;
+    column-gap: 30px;
+  }
+
+  .heading-container {
+    display: flex;
+
+    .content-block {
+      width: 50%;
+      margin-left: 50px;
+
+      .heading {
+        display: flex;
+        justify-content: center;
+        color: white;
+        font-size: 60px;
+        font-weight: 500;
+        line-height: 25px;
+        flex-direction: column;
+        margin-top: 70px;
+      }
+
+      .info-block {
+        height: 150px;
+        display: flex;
+        justify-content: space-around;
+      }
+    }
+
+    .content-block-inside {
+
+      .search-block {
+        margin-bottom: 35px;
+        margin-top: 35px;
+
+        .search {
+          padding: 5px 10px;
+          background: white;
+          width: 67%;
+          border-radius: 25px;
+          display: flex;
+          column-gap: 10px;
+          align-items: center;
+
+          input {
+            border: none;
+            width: 300px;
+          }
+
+          input:focus,
+          input:active {
+            border: none;
+            outline: none;
+          }
+
+          .search-btn {
+            background: black;
+            color: white;
+            padding: 4px 10px;
+            border-radius: 59px;
+            font-weight: 500;
+            font-size: smaller;
+          }
+        }
+      }
+
+      .info-sub-block {
+        height: 150px;
+        display: flex;
+        column-gap: 90px;
+
+        .info {
+          text-align: center;
+
+          h2 {
+            color: white;
+            font-size: 51px;
+            font-weight: 700;
+          }
+
+          p {
+            font-size: 25px;
+            color: white;
+            margin: -8px;
+            padding: 0px;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+
+    .content-img-block {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 400px;
+        height: 400px;
+      }
+    }
+  }
+}
+
+//--- Second Section Start
+
+.second-container {
+  margin: 15px 3%;
+  border-radius: 2rem;
+  .box {
+    display: flex;
+    height: 400px;
+
+    .box-content {
+      .heading-main {
+        display: flex;
+        justify-content: center;
+        font-size: 60px;
+        font-weight: 500;
+        line-height: 25px;
+        flex-direction: column;
+        margin-top: 70px;
+        margin-left: 50px;
+      }
+
+      .sub-content {
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        font-weight: 200 !important;
+        font-family: sans-serif !important;
+        flex-direction: column;
+        line-height: 5px;
+        margin: 50px 50px 25px 50px;
+      }
+
+      .signup-container {
+        span {
+          padding: 5px 10px;
+          border: 1px solid white;
+          border-radius: 50px;
+          font-weight: 500;
+          color: white;
+          margin: 51px 0px 0px 50px;
+          background: red;
+        }
+      }
+
+      .signup-container span:hover {
+        background-color: white;
+        color: red;
+        font-weight: 500;
+        cursor: pointer;
+        border: none;
+        border: 1px solid black;
+      }
+    }
+  }
+
+  .box>div {
+    flex: 1;
+  }
+
+  .box>div:last-child {
+    margin-left: -50vw;
+    background: url('../../../assets/sccond-section.jpg') center/cover no-repeat;
+    clip-path: polygon(calc(30vw + -81px) 0, 100% 0, 100% 100%, 0 100%);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+}

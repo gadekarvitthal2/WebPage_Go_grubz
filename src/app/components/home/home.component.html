@@ -1,0 +1,152 @@
+<div class="main-container">
+  <div class="nav-container">
+    <div class="nav-block">
+      <div class="logo-block">
+        <img
+          (click)="open(content)"
+          src="../../../assets/menu_icon.png"
+          alt="menu-icon"
+        />
+      </div>
+      <div class="logo">
+        <p>Go</p>
+        <p>Grubz</p>
+      </div>
+    </div>
+    <div class="custom-selection-block">
+      <p
+        [class.selected]="selectedItem === 'Order'"
+        (click)="selectItem('Order')"
+      >
+        Order
+      </p>
+      <p
+        [class.selected]="selectedItem === 'Location'"
+        (click)="selectItem('Location')"
+      >
+        Locations
+      </p>
+      <p
+        [class.selected]="selectedItem === 'Contact Us'"
+        (click)="selectItem('Contact Us')"
+      >
+        Contact Us
+      </p>
+      <p
+        [class.selected]="selectedItem === 'About Us'"
+        (click)="selectItem('About Us')"
+      >
+        About Us
+      </p>
+      <p
+        [class.selected]="selectedItem === 'Add your Restaurant'"
+        (click)="selectItem('Add your Restaurant')"
+      >
+        Add your Restaurant
+      </p>
+    </div>
+    <div class="login-button-block">
+      <span class="sign-up-btn">Sign Up</span>
+      <span class="sign-in-btn">Sign in</span>
+    </div>
+  </div>
+  <div class="heading-container">
+    <div class="content-block">
+      <div class="heading">
+        <p>Why Go out when,</p>
+        <br>
+        <p>you can Grubz in</p>
+      </div>
+      <div class="content-block-inside">
+        <div class="search-block">
+          <div class="search">
+            <img src="../../../assets/send-fill.svg.svg" alt="send fill svg">
+            <input type="text" placeholder="Enter postcode or delivery address"/>
+            <span class="search-btn">Search</span>
+          </div>
+        </div>
+        <div class="info-sub-block">
+          <div class="info">
+            <h2>300</h2>
+            <p>Restaurants</p>
+          </div>
+          <div class="info">
+            <h2>30,000</h2>
+            <p>Users</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content-img-block">
+      <img src="../../../assets/burger_img.jpeg" alt="burger image">
+    </div>
+  </div>
+</div>
+
+  <!-- Second Section -->
+  <div class="second-container">
+    <div class="box">
+      <div class="box-content">
+        <div class="heading-main">
+          <p>Join the</p>
+          <br>
+          <p>movement</p>
+        </div>
+        <div class="sub-content">
+          <p>Grow your business and reach new</p>
+          <br>
+         <p>costumers by partnering with us</p>
+        </div>
+        <div class="signup-container">
+          <span >
+            Signup you store
+          </span>
+        </div>
+      </div>
+      <div></div>
+    </div>
+  </div>
+<ng-template #content let-offcanvas>
+  <div class="offcanvas-header">
+    <h4 class="offcanvas-title" id="offcanvas-basic-title">Profile update</h4>
+    <button
+      type="button"
+      class="btn-close"
+      aria-label="Close"
+      (click)="offcanvas.dismiss('Cross click')"
+    ></button>
+  </div>
+  <div class="offcanvas-body">
+    <form>
+      <div class="mb-3">
+        <label for="dateOfBirth">Date of birth</label>
+        <div class="input-group">
+          <input
+            id="dateOfBirth"
+            class="form-control"
+            placeholder="yyyy-mm-dd"
+            name="dp"
+            ngbDatepicker
+            #dp="ngbDatepicker"
+          />
+          <button
+            class="btn btn-outline-secondary bi bi-calendar3"
+            (click)="dp.toggle()"
+            type="button"
+          ></button>
+        </div>
+      </div>
+    </form>
+    <div class="text-end">
+      <button
+        type="button"
+        class="btn btn-outline-dark"
+        (click)="offcanvas.close('Save click')"
+      >
+        Save
+      </button>
+    </div>
+  </div>
+</ng-template>
+
+
