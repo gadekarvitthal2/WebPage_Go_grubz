@@ -25,8 +25,12 @@ export class HomeComponent {
 	}
 
   selectedItem: string | null = null;
+  selectedMenuItem: string | null = null;
 
   selectItem(item: string) {
     this.selectedItem = item;
+  }
+  selectMenuItem(item: string) {
+    this.selectedMenuItem = item;
   }
 }

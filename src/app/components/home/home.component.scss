@@ -64,7 +64,7 @@
     padding: 3px 8px;
     background: white;
     border-radius: 29px;
-    color: red;
+    color: #fc353a;
     font-weight: 500;
   }
 
@@ -84,7 +84,7 @@
     .sign-up-btn:hover,
     .sign-in-btn:hover {
       background-color: white;
-      color: red;
+      color: #fc353a;
       font-weight: 500;
       cursor: pointer;
       border: none
@@ -235,6 +235,10 @@
         flex-direction: column;
         line-height: 5px;
         margin: 50px 50px 25px 50px;
+
+        p {
+          font-family: sans-serif !important;
+        }
       }
 
       .signup-container {
@@ -245,13 +249,13 @@
           font-weight: 500;
           color: white;
           margin: 51px 0px 0px 50px;
-          background: red;
+          background: #fc353a;
         }
       }
 
       .signup-container span:hover {
         background-color: white;
-        color: red;
+        color: #fc353a;
         font-weight: 500;
         cursor: pointer;
         border: none;
@@ -314,6 +318,10 @@
       line-height: 5px;
       margin: 50px 50px 25px 50px;
       white-space: nowrap;
+
+      p {
+        font-family: sans-serif !important;
+      }
     }
 
     .signup-container {
@@ -324,13 +332,13 @@
         font-weight: 500;
         color: white;
         margin: 51px 0px 0px 50px;
-        background: red;
+        background: #fc353a;
       }
     }
 
     .signup-container span:hover {
       background-color: white;
-      color: red;
+      color: #fc353a;
       font-weight: 500;
       cursor: pointer;
       border: none;
@@ -381,11 +389,15 @@
       justify-content: center;
       font-size: 18px;
       font-weight: 200 !important;
-      font-family: sans-serif !important;
+      // font-family: sans-serif !important;
       flex-direction: column;
       line-height: 5px;
       margin: 50px 50px 25px 50px;
       white-space: nowrap;
+
+      p {
+        font-family: sans-serif !important;
+      }
     }
 
     .store-icon-container {
@@ -395,9 +407,9 @@
       margin: 0px 50px 25px 50px;
 
       img {
-        width: 175px;
-        height: 50px;
-        border-radius: 12px;
+        width: 120px;
+        height: 35px;
+        border-radius: 5px;
         cursor: pointer;
       }
     }
@@ -424,7 +436,7 @@
     p {
       font-weight: 500;
       font-size: 40px;
-      color: red;
+      color: #fc353a;
     }
   }
 
@@ -460,6 +472,10 @@
       row-gap: 10px;
       flex-direction: column;
     }
+
+    p {
+      font-family: sans-serif !important;
+    }
   }
 }
 
@@ -470,6 +486,7 @@ footer .footer-container {
   margin: 15px 3%;
   border-radius: 2rem;
   overflow: hidden;
+
   .logo-block {
     display: flex;
     flex-direction: column;
@@ -482,12 +499,12 @@ footer .footer-container {
       display: flex;
       flex-direction: column;
       margin-left: 10rem;
-      color: red;
+      color: #fc353a;
 
       p {
         font-weight: 500;
         font-size: 40px;
-        color: red;
+        color: #fc353a;
       }
     }
 
@@ -518,8 +535,49 @@ footer .footer-container {
       justify-content: center;
       align-items: center;
       margin: 0 auto;
+      flex-direction: column;
+
+      .social-icon-block {
+        display: flex;
+        column-gap: 15px;
+
+        i {
+          font-size: 20px;
+          cursor: pointer;
+          transition: transform 0.3s ease-in-out;
+        }
+
+        i:hover {
+          color: #fc353a;
+          transform: scale(1.2);
+        }
+      }
     }
   }
+}
 
+.menu-selection-block {
+  display: flex;
+  flex-direction: column;
+  font-size: 25px;
 
+  p.selectedMenu {
+    padding: 3px 8px;
+    background: white;
+    border-radius: 29px;
+    font-weight: 500;
+    cursor: pointer;
+    background: #fc353a;
+    color: white;
+    padding: 0px 13px;
+    border-radius: 21px;
+  }
+
+  p:hover {
+    background: #fc353a;
+    color: white;
+    padding: 0px 13px;
+    border-radius: 21px;
+    cursor: pointer;
+  }
 }
